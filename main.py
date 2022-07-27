@@ -1,15 +1,7 @@
 from datetime import datetime, timedelta
-from lib2to3.pgen2 import token
-from sqlite3 import Timestamp
-from tkinter.messagebox import NO
 import ssl
 from flask import Flask, jsonify, request, Response, url_for, redirect, session
 import json
-import os
-from functools import wraps
-import requests
-from pip._vendor import cachecontrol
-import requests
 from authlib.integrations.flask_client import OAuth
 
 app = Flask(__name__)
