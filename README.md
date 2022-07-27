@@ -16,6 +16,11 @@ Required python >= 3.5
 
 Required Google Credentials client id and secert id for google login
 
+## PIP lists to install
+
+Authlib==1.0.1
+Flask==2.1.3
+
 ## How to localhost tutorial
 - You need open notepad with admin and open folder called `C:\Windows\System32\drivers\etc\hosts` add three domain at the last bottom then save it.
 ```text
