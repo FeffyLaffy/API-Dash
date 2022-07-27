@@ -17,8 +17,8 @@ Required python >= 3.5
 Required Google Credentials client id and secert id for google login
 
 ## PIP lists to install
-
 Authlib==1.0.1
+
 Flask==2.1.3
 
 ## How to localhost tutorial
