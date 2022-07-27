@@ -13,6 +13,7 @@ First [Muse Dash](https://store.steampowered.com/app/774171/Muse_Dash/) Private 
 
 ## Requirements
 Required python >= 3.5
+Required Google Credentials client id and secert id
 
 ## Hosting local tutorial
 - You need open notepad with admin and open folder called `C:\Windows\System32\drivers\etc\hosts` add three domain at the last bottom then save it.
