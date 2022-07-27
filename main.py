@@ -199,34 +199,14 @@ def get_token():
     data={"code":0,"msg":"ok","data":{"token":request.args.get("code")}}
     return data, 200, {'Content-Type': 'application/json'}
 
-def check_auth(token):
-    player=open('player.json', 'rb')
-    player= json.load(player)
-    for key, values in player["data"].items():
-        print("test"+token)
-        print("test2"+key)
-        if key==token:
-            a={"auth": "a","code":0,"fresh":False,"profile":{"object_id":"62cfdae8c1dd5b7cfa114ef0","created_at":"2022-07-14T08:59:20.337Z","updated_at":"2022-07-14T08:59:20.337Z","user_id":"5abb7dfd33354edfa3703bc6073b3dac","nickname":"玩家5abb7dfd33354edfa3703bc6073b3dac"},"uid":"5abb7dfd33354edfa3703bc6073b3dac"}
-            return a
-
 @app.route('/user/account-oversea-login/', methods=['GET', 'POST'])
 def acc_oversea_login():
     if request.method == "POST":
-
-        return 404
+        return 202
     elif request.method == "GET":
         print(request.headers)
         return 202
 
-@app.route("/user/profile")
-def profile():
-    if request.method == "POST":
-        print(request.query_string)
-        data={"code":0,"msg":"ok","profile":{"object_id":"62cfdae8c1dd5b7cfa114ef0","created_at":"2022-07-14T08:59:20.337Z","updated_at":"2022-07-14T08:59:20.337Z","user_id":"5abb7dfd33354edfa3703bc6073b3dac","nickname":"asatako"}}
-        return data, 202, {'Content-Type': 'application/json'}
-    elif request.method == "GET":
-        data={"code":0,"msg":"ok","profile":{"object_id":"62cfdae8c1dd5b7cfa114ef0","created_at":"2022-07-14T08:59:20.337Z","updated_at":"2022-07-14T08:59:20.337Z","user_id":"5abb7dfd33354edfa3703bc6073b3dac","nickname":"asatako"}}
-        return data, 202, {'Content-Type': 'application/json'}
 
 #@app.route("musedash/v2/save", methods=['PUT'])
 #def save():
