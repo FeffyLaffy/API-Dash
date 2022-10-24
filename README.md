@@ -21,6 +21,7 @@ Required Discord Developer Client ID and Secert for oauth
 Authlib==1.0.1
 discord-oauth2==0.2
 Flask==2.1.3
+pymongo==4.2.0
 
 ## How to localhost tutorial
 - You need open notepad with admin and open folder called `C:\Windows\System32\drivers\etc\hosts` add three domain at the last bottom then save it.
