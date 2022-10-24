@@ -4,7 +4,7 @@ First [Muse Dash](https://store.steampowered.com/app/774171/Muse_Dash/) Private 
 
 ## Features
 - [ ] Custom leaderboard (saving data not work).
-- [ ] login account (~~facebook~~, google, ~~qq/wechat~~ saving data no work).
+- [ ] login account (Disocrd method).
 - [x] Custom announcement.
 - [x] Custom Music Tag.
 
@@ -14,11 +14,11 @@ First [Muse Dash](https://store.steampowered.com/app/774171/Muse_Dash/) Private 
 ## Requirements
 Required python >= 3.5
 
-Required Google Credentials client id and secert id for google login
+Required Discord Developer Client ID and Secert for oauth
 
 ## PIP lists to install
 Authlib==1.0.1
-
+discord-oauth2==0.2
 Flask==2.1.3
 
 ## How to localhost tutorial
