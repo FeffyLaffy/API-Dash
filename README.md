@@ -4,9 +4,10 @@ First [Muse Dash](https://store.steampowered.com/app/774171/Muse_Dash/) Private 
 
 ## Features
 - [ ] Custom leaderboard (saving data not work).
-- [ ] login account (Disocrd method).
+- [x] login account (Disocrd method).
 - [x] Custom announcement.
 - [x] Custom Music Tag.
+- [x] MongoDB create account and get account data
 
 ## Supported platform
 - [Windows](https://www.microsoft.com/en-us/windows). Tested with Windows 10 and 11.
