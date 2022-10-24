@@ -17,7 +17,6 @@ def check(mycol, id):
 def create_db():
     dblist = client.list_database_names()
     if "musedash" in dblist:
-        print("The database exists.")
         mydb = client["musedash"]
         return mydb
     else:
@@ -27,7 +26,6 @@ def create_db():
 def create_collection(mydb):
     colllist = mydb.list_collection_names()
     if "PlayersData" in colllist:
-        print("The collection exists.")
         data = mydb["PlayersData"]
         return data
     else:
