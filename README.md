@@ -4,7 +4,7 @@ First [Muse Dash](https://store.steampowered.com/app/774171/Muse_Dash/) Private 
 
 ## Features
 - [x] login account (Disocrd method).
-- [x] Custom announcement.
+- [ ] Custom announcement.
 - [x] Custom Music Tag.
 - [x] MongoDB create account and get account data
 
