@@ -33,11 +33,29 @@ def jsonResponseFactory(data):
         return Response(json.dumps(data), *args, **kwargs)
     return callable
 
+data = {
+  "code": 0,
+  "save": {
+    "Account": "",
+    "Achievement": "",
+    "StageAchievement": "",
+    "SteamAchievement": "",
+    "Task": "",
+    "UserID": "",
+    "created_at": "",
+    "updated_at": ""
+  }
+}
 
 @save.route("/musedash/v2/save", methods=['GET'])
 def SaveGet():
+    return data, 200, {'Content-Type': 'application/json'}
+
+@save.route("/musedash/v2/save", methods=['PUT'])
+def SavePut():
     print(request.headers)
-    print(request.get_data())
-    print("-------------------data hello???????????????????????????")
-    data = {"code": 0,"msg": "ok"}
+    bdata=request.data.decode("utf-8")
+    print(json.dumps(bdata))
+    print("data PUT saving achivement and account")
+    data = {"code": 0,"msg": "ok"} #respone to client ok server accept
     return data, 200, {'Content-Type': 'application/json'}
