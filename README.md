@@ -3,7 +3,6 @@
 First [Muse Dash](https://store.steampowered.com/app/774171/Muse_Dash/) Private Server made with flask (python).
 
 ## Features
-- [ ] Custom leaderboard (saving data not work).
 - [x] login account (Disocrd method).
 - [x] Custom announcement.
 - [x] Custom Music Tag.
