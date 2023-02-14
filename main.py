@@ -28,6 +28,7 @@ from API.musedash import musedash
 from API.save import save
 from API.statistics import statistics
 from API.time import time
+from API.leaderboard import leaderboard
 import os
 import ssl
 
