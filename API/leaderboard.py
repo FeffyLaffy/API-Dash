@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-leaderboard=Blueprint('leaderboard', __name__)
+board=Blueprint('board', __name__)
 
 ldata={
     "code": 0,
@@ -41,6 +41,6 @@ ldata={
     ]
 }
 
-@leaderboard.route("/musedash/v1/pcleaderboard/top", methods=['GET'])
+@board.route("/musedash/v1/pcleaderboard/top", methods=['GET'])
 def ori_board():
     return ldata, 200 , {'Content-Type': 'application/json'}
