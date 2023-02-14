@@ -22,12 +22,22 @@ discord-oauth2==0.2
 Flask==2.1.3
 pymongo==4.2.0
 
-## How to localhost tutorial
+## How to redirect traffic to development server
+### Windows `host` file
 - You need open notepad with admin and open folder called `C:\Windows\System32\drivers\etc\hosts` add three domain at the last bottom then save it.
 ```text
 127.0.0.1 prpr-muse-dash.peropero.net
 127.0.0.1 us-musedash.peropero.net
 127.0.0.1 user-us.peropero.net
+```
+
+### mitmproxy
+1. Install mitmproxy
+2. Install proxy Root CA certificates
+3. Set windows proxy setting to localhost:8080
+4. Run this
+```
+mitmproxy -s mitm-addon/redirect-traffic.py
 ```
 
 ## Important
