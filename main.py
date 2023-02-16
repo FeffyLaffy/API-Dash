@@ -25,6 +25,8 @@ from API.config import config
 from API.login import login
 # from API.mongoJobs import mongoJobs
 from API.save import save
+from API.board import board
+from API.profile import profile
 from API.statistics import statistics
 from API.time import time
 import os
