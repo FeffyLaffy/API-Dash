@@ -1,8 +1,8 @@
 from flask import Blueprint
 
-board=Blueprint('board', __name__)
+leaderboard = Blueprint('leaderboard', __name__)
 
-ldata={
+ldata = {
     "code": 0,
     "rank": {
         "detail": None,
@@ -41,6 +41,7 @@ ldata={
     ]
 }
 
-@board.route("/musedash/v1/pcleaderboard/top", methods=['GET'])
+
+@leaderboard.route("/musedash/v1/pcleaderboard/top", methods=['GET'])
 def ori_board():
-    return ldata, 200 , {'Content-Type': 'application/json'}
+    return ldata, 200, {'Content-Type': 'application/json'}
