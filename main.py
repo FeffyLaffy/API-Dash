@@ -29,7 +29,7 @@ from API.leaderboard import leaderboard
 from API.profile import profile
 from API.statistics import statistics
 from API.time import time
-from API.approved_version import approve
+from API.approved_version import approved_version
 import os
 import ssl
 
