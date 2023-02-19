@@ -47,8 +47,5 @@ for lib in lib:
     print(f"Loading {lib}...")
     app.register_blueprint(globals()[lib])
 
-context = ssl.SSLContext(ssl.PROTOCOL_TLS)
-context.load_cert_chain('konishi.crt', 'konishi.key')
-
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=443, ssl_context=context, debug=True)
+    app.run(host='0.0.0.0', port=4433, debug=True)

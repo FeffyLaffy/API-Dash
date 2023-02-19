@@ -16,8 +16,8 @@ class LocalRedirect:
         ]:
             ctx.log.info("pretty host is: %s" % flow.request.pretty_host)
             flow.request.host = "127.0.0.1"
-            flow.request.port = 443
-            flow.request.scheme = 'https'
+            flow.request.port = 4433
+            flow.request.scheme = 'http'
 
 
 addons = [
