@@ -29,6 +29,7 @@ from API.leaderboard import leaderboard
 from API.profile import profile
 from API.statistics import statistics
 from API.time import time
+from API.approved_version import approve
 import os
 import ssl
 
@@ -48,7 +49,6 @@ for lib in lib:
 
 context = ssl.SSLContext(ssl.PROTOCOL_TLS)
 context.load_cert_chain('konishi.crt', 'konishi.key')
-
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=443, ssl_context=context, debug=True)
