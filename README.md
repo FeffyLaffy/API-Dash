@@ -44,4 +44,4 @@ mitmproxy -s mitm-addon/redirect-traffic.py
 
 Before you build this project make sure you create a cert/key SSL for the server [here to edit file name cert and key](https://github.com/FeffyLaffy/API-Dash/blob/0c4690de1b40a78bfca189115ac994bfe9c10af4/main.py#L255)
 
-if got any question direct message me at discord Asatako#4152 or join [Discord server](https://discord.gg/wqd4NFy6pW) at here have a nice day 👍 :)
+if got any question direct message me at discord Asatako#4152 or join [Discord server](https://discord.gg/8fzZPKvA4j) at here have a nice day 👍 :)
